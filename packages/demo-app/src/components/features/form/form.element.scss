@@ -1,0 +1,24 @@
+.form-row {
+  display: block;
+  margin-bottom: 1em;
+}
+
+pre {
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+.has-error {
+  & :not([disabled])::part(form-control-label),
+  & :not([disabled])::part(form-control-help-text) {
+    color: var(--sl-color-danger-700);
+  }
+
+  & :not([disabled])::part(base) {
+    border-color: var(--sl-color-danger-600);
+  }
+
+  & :focus-within::part(base) {
+    box-shadow: 0 0 0 var(--sl-focus-ring-width) var(--sl-color-danger-200);
+  }
+}
