@@ -1,6 +1,6 @@
-import { router, routes } from "../../../app/routes";
-
 import { addStyles } from "../../../core/helpers/addStyles";
+import { router } from "../../../app";
+import { routes } from "../../../app/routes";
 import { styles } from "./menu.element.module";
 
 export class MenuElement extends HTMLElement {
